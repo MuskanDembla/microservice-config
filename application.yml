@@ -18,6 +18,11 @@ spring:
       hibernate:
         format_sql: true
 
+  data:
+    redis:
+      host: localhost
+      port: 6379
+
 logging:
   level:
     org.springframework.web: DEBUG
@@ -31,7 +36,10 @@ event:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
       properties:
-        spring.json.trusted.packages: '*'
+        spring:
+          json:
+            trusted:
+              packages: '*'
     producer:
       bootstrap-servers: test:9092
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
@@ -41,12 +49,6 @@ event:
   errorTopic: errorTopic
   consumeTopic: topic3
   delay: 6000
-
-spring:
-  data:
-    redis:
-      host: localhost
-      port: 6379
 
 CACHE_ENABLED: true
 mongodb:
