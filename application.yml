@@ -3,12 +3,12 @@ spring:
     primary:
       url: jdbc:postgresql://localhost:5432/events
       username: postgres
-      password: postgres
+      password: password
       driver-class-name: org.postgresql.Driver
     read:
       url: jdbc:postgresql://localhost:5432/events
       username: postgres
-      password: postgres
+      password: password
 
   jpa:
     hibernate:
