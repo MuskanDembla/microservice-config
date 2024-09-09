@@ -1,4 +1,6 @@
 spring:
+  main.
+   allow-circular-references: true
   datasource:
     primaryUrl: jdbc:postgresql://localhost:5432/events
     primaryUsername: postgres
