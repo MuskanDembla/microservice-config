@@ -1,14 +1,12 @@
 spring:
   datasource:
-    primary:
-      url: jdbc:postgresql://localhost:5432/events
-      username: postgres
-      password: password
-      driver-class-name: org.postgresql.Driver
-    read:
-      url: jdbc:postgresql://localhost:5432/events
-      username: postgres
-      password: password
+    primaryUrl: jdbc:postgresql://localhost:5432/events
+    primaryUsername: postgres
+    primaryPassword: password
+    driver-class-name: org.postgresql.Driver
+    readUrl: jdbc:postgresql://localhost:5432/events
+    readUsername: postgres
+    readPassword: password
 
   jpa:
     hibernate:
