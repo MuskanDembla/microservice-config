@@ -57,3 +57,5 @@ mongodb:
 doc:
   base:
     url: https://documentation.dev.flex83.com
+
+SERVICE_ENV: postgres
